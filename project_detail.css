@@ -1,0 +1,122 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    min-height:100vh;
+    background:linear-gradient(to right, #dbeafe, #f0f9ff, #ede9fe);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px;
+}
+
+.project-card{
+    width:900px;
+    background:white;
+    border-radius:25px;
+    padding:40px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.15);
+    border:2px solid #bfdbfe;
+}
+
+.project-title{
+    font-size:42px;
+    color:#2563eb;
+    margin-bottom:30px;
+    text-align:center;
+}
+
+.section{
+    margin-bottom:30px;
+}
+
+ .section h2{
+    color:#1e3a8a;
+    margin-bottom:12px;
+    font-size:28px;
+}
+
+.section p{
+    color:#475569;
+    font-size:19px;
+    line-height:1.8;
+    text-indent: 50px;
+    
+}
+
+ .tech-stack{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+    margin-top:15px;
+}
+.tech{
+    background:#dbeafe;
+    color:#1e3a8a;
+    padding:12px 20px;
+    border-radius:30px;
+    font-size:17px;
+    font-weight:bold;
+}
+
+.status{
+    display:inline-block;
+    margin-top:15px;
+    padding:12px 25px;
+    border-radius:30px;
+    background:#16a34a;
+    color:white;
+    font-size:18px;
+    font-weight:bold;
+}
+
+.back-btn{
+    margin-top:40px;
+    display:inline-block;
+    text-decoration:none;
+    background:linear-gradient(
+        135deg,
+        #2563eb,
+        #1e3a8a
+    );
+    color:white;
+    padding:15px 30px;
+    border-radius:35px;
+    font-size:18px;
+    font-weight:bold;
+    transition:0.3s;
+}
+.back-btn:hover{
+    transform:translateY(-5px);
+}
+
+@media(max-width:950px){
+    .project-card{
+        width:100%;
+    }
+    .project-title{
+        font-size:34px;
+    }
+    .section h2{
+        font-size:24px;
+    }
+}
+
+@media(max-width:600px){
+     body{
+              padding:20px;
+          }
+          .project-card{
+              padding:25px;
+          }
+          .project-title{
+              font-size:28px;
+          }
+          .section p{
+              font-size:16px;
+          }
+      }
